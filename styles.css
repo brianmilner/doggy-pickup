@@ -359,7 +359,7 @@ a {
     }
 
     .nav-phone {
-        font-size: 0.9rem;
+        font-size: 1.15rem; /* Increased size for better readability on mobile */
     }
 
     .nav-phone svg {
