@@ -123,6 +123,17 @@ a {
     font-size: 1.25rem;
 }
 
+.btn-white {
+    background-color: var(--color-bg-light);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.btn-white:hover {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 104, 55, 0.2);
+}
+
 .btn-icon {
     width: 1.5rem;
     height: 1.5rem;
@@ -307,7 +318,6 @@ a {
 }
 
 .hero-btn {
-    animation: bounce-subtle 2s infinite ease-in-out;
     background-color: var(--color-accent);
     color: var(--color-text-dark);
     width: 100%;
@@ -568,6 +578,10 @@ a {
 .select-input {
     width: 100%;
     padding: 1rem;
+    padding-right: 2.5rem; /* Stop text from flowing under arrow */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--color-text-dark);
