@@ -139,6 +139,7 @@ a {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     transition: all var(--transition-speed);
+    overflow: visible; /* CRITICAL: Allow logo to break out of navbar */
 }
 
 .nav-container {
@@ -156,13 +157,13 @@ a {
 }
 
 .logo-img {
-    height: 90px; /* Make it significantly larger */
+    height: 90px;
     width: auto;
     object-fit: contain;
     position: absolute;
     top: 50%;
-    left: 20px; /* Bring it slightly off the left wall */
-    transform: translateY(-50%);
+    left: 20px;
+    transform: translateY(-35%); /* Pushing it down further */
     filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
     transition: transform 0.3s ease;
 }
@@ -337,7 +338,7 @@ a {
 
 @media (max-width: 600px) {
     .nav-container {
-        padding: 0.8rem 1rem;
+        padding: 1.2rem 1rem; /* Increased top/bottom padding to fix cutoff */
         padding-left: 250px; /* Ensure space for the larger logo */
     }
 
@@ -346,8 +347,10 @@ a {
     }
 
     .logo-img {
-        height: 65px; /* Scale down, but still much larger than before */
-        left: 10px;
+        height: 60px; /* Slightly smaller to fit cleanly */
+        left: 5px;
+        top: 50%; /* Re-center vertically within the taller navbar */
+        transform: translateY(-50%); /* Re-enable pure centering */
     }
 
     .nav-actions {
