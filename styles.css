@@ -146,6 +146,7 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem 2rem;
+    padding-left: 320px; /* Room for the extra-wide desktop logo */
     display: flex;
     justify-content: space-between;
     align-items: center;
