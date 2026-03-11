@@ -290,8 +290,20 @@ a {
     align-items: center;
     gap: 1.5rem;
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .hero-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 .hero-btn {
