@@ -478,12 +478,11 @@ a {
 .step-image {
     width: 200px;
     height: 200px;
-    object-fit: contain;
+    object-fit: cover;
     margin-bottom: 1.5rem;
     border-radius: 50%;
     background: #ffffff;
     box-shadow: var(--shadow-md);
-    padding: 1rem;
     transition: transform var(--transition-speed);
 }
 
@@ -888,7 +887,6 @@ a {
     margin: 0 auto 1.5rem;
     border-radius: 50%;
     background: #ffffff;
-    padding: 0.5rem;
     box-shadow: 0 4px 12px rgba(140, 198, 63, 0.2);
     overflow: hidden;
     transition: transform var(--transition-speed);
@@ -903,6 +901,7 @@ a {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    transform: scale(1.25);
 }
 
 .hiw-step-number {
