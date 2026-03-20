@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const basePrices = {
         weekly: 20,
         biweekly: 30,
-        monthly: 40
+        monthly: 50
     };
 
     const yardAdjustments = {
